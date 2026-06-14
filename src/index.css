@@ -532,9 +532,10 @@ a {
   }
 
   .cv-contact {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
   }
 
   .timeline-item {
