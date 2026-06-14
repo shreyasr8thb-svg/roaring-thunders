@@ -19,6 +19,12 @@ const Navbar = () => {
           Home
         </Link>
         <Link 
+          to="/projects" 
+          className={`nav-link ${location.pathname.startsWith('/projects') ? 'active' : ''}`}
+        >
+          Projects
+        </Link>
+        <Link 
           to="/team" 
           className={`nav-link ${location.pathname.startsWith('/team') ? 'active' : ''}`}
         >
