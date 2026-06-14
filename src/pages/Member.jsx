@@ -50,23 +50,23 @@ const Member = () => {
           <p>{member.role} | {member.institute}</p>
           <div className="cv-contact">
             {member.email && (
-              <a href={`mailto:${member.email}`} className="cv-contact-item">
-                <Mail size={16} /> {member.email}
+              <a href={`mailto:${member.email}`} className="cv-contact-item" title="Email">
+                <Mail size={20} />
               </a>
             )}
             {member.phone && (
-              <a href={`tel:${member.phone}`} className="cv-contact-item">
-                <Phone size={16} /> {member.phone}
+              <a href={`tel:${member.phone}`} className="cv-contact-item" title="Phone">
+                <Phone size={20} />
               </a>
             )}
             {member.linkedin && member.linkedin !== "https://linkedin.com/in/" && (
-              <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="cv-contact-item">
-                <Link size={16} /> LinkedIn
+              <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="cv-contact-item" title="LinkedIn">
+                <Link size={20} />
               </a>
             )}
             {member.location && (
-              <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(member.location)}`} target="_blank" rel="noopener noreferrer" className="cv-contact-item">
-                <MapPin size={16} /> {member.location}
+              <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(member.location)}`} target="_blank" rel="noopener noreferrer" className="cv-contact-item" title="Location">
+                <MapPin size={20} />
               </a>
             )}
           </div>
