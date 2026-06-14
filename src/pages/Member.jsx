@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link as RouterLink, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { teamData } from '../data/team';
-import { ArrowLeft, GraduationCap, Mail, Phone, Code, MapPin, Linkedin } from 'lucide-react';
+import { ArrowLeft, GraduationCap, Mail, Phone, Code, MapPin, Link } from 'lucide-react';
 
 const Member = () => {
   const { id } = useParams();
@@ -27,9 +27,9 @@ const Member = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <Link to="/team" className="back-btn">
+      <RouterLink to="/team" className="back-btn">
         <ArrowLeft size={20} /> Back to Team
-      </Link>
+      </RouterLink>
 
       <div className="cv-header">
         <div className="cv-avatar" style={{ overflow: 'hidden' }}>
@@ -61,7 +61,7 @@ const Member = () => {
             )}
             {member.linkedin && member.linkedin !== "https://linkedin.com/in/" && (
               <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="cv-contact-item">
-                <Linkedin size={16} /> LinkedIn
+                <Link size={16} /> LinkedIn
               </a>
             )}
             {member.location && (
