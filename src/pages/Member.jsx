@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { teamData } from '../data/team';
-import { ArrowLeft, Briefcase, GraduationCap, Mail, Phone, Code } from 'lucide-react';
+import { ArrowLeft, GraduationCap, Mail, Phone, Code, MapPin, Linkedin } from 'lucide-react';
 
 const Member = () => {
   const { id } = useParams();
@@ -32,25 +32,49 @@ const Member = () => {
       </Link>
 
       <div className="cv-header">
-        <div className="cv-avatar">
-          {member.name.charAt(0)}
+        <div className="cv-avatar" style={{ overflow: 'hidden' }}>
+          {member.photo ? (
+            <img 
+              src={member.photo} 
+              alt={member.name} 
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+              onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex'; }}
+            />
+          ) : null}
+          <div style={{ display: member.photo ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
+            {member.name.charAt(0)}
+          </div>
         </div>
         <div className="cv-title">
           <h1>{member.name}</h1>
           <p>{member.role} | {member.institute}</p>
           <div className="cv-contact">
-            <div className="cv-contact-item">
-              <Mail size={16} /> {member.email}
-            </div>
-            <div className="cv-contact-item">
-              <Phone size={16} /> {member.phone}
-            </div>
+            {member.email && (
+              <a href={`mailto:${member.email}`} className="cv-contact-item">
+                <Mail size={16} /> {member.email}
+              </a>
+            )}
+            {member.phone && (
+              <a href={`tel:${member.phone}`} className="cv-contact-item">
+                <Phone size={16} /> {member.phone}
+              </a>
+            )}
+            {member.linkedin && member.linkedin !== "https://linkedin.com/in/" && (
+              <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="cv-contact-item">
+                <Linkedin size={16} /> LinkedIn
+              </a>
+            )}
+            {member.location && (
+              <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(member.location)}`} target="_blank" rel="noopener noreferrer" className="cv-contact-item">
+                <MapPin size={16} /> {member.location}
+              </a>
+            )}
           </div>
         </div>
       </div>
 
       <div className="cv-section">
-        <h2>About Me</h2>
+        <h2>About</h2>
         <p style={{ color: 'var(--text-secondary)', lineHeight: 1.6 }}>{member.about}</p>
       </div>
 
@@ -75,8 +99,6 @@ const Member = () => {
           ))}
         </div>
       </div>
-
-
 
     </motion.div>
   );

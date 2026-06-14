@@ -4,10 +4,13 @@ export const teamData = [
     name: "Shreyas R Kowshik",
     role: "Electronics & Communication Engineer",
     institute: "K.S. Institute of Technology",
-    email: "shreyas@roaringthunders.dev",
-    phone: "+91 9876543210",
-    about: "Passionate ECE student specializing in embedded systems and IoT. Strong problem-solving skills with a focus on building efficient, interconnected electronic systems.",
-    skills: ["Embedded C", "IoT Architecture", "Arduino/Raspberry Pi", "Python", "Circuit Design", "Signal Processing"],
+    email: "shreyasr8thb@gmail.com",
+    phone: "9972938188",
+    linkedin: "https://linkedin.com/in/shreyas-r-kowshik-894ba3205",
+    location: "Bengaluru",
+    photo: "/shreyas.jpg", // Place the image in the 'public' folder named 'shreyas.jpg'
+    about: "Enthusiastic and motivated fresher with a strong foundation in VLSI and a keen interest in Semiconductor technologies. Seeking to begin my career in the VLSI and semiconductor industry with an innovative organisation.",
+    skills: ["VLSI Design", "Semiconductor Technologies", "Embedded C", "Arduino/Raspberry Pi", "Python", "Circuit Design"],
     education: [
       {
         degree: "B.E. in Electronics and Communication Engineering",
@@ -24,6 +27,9 @@ export const teamData = [
     institute: "K.S. Institute of Technology",
     email: "sujay@roaringthunders.dev",
     phone: "+91 9876543211",
+    linkedin: "https://linkedin.com/in/",
+    location: "Bengaluru",
+    photo: "",
     about: "ECE enthusiast with a keen interest in robotics and automation. Dedicated to bridging the gap between hardware and intelligent software solutions.",
     skills: ["Robotics", "C++", "Microcontrollers", "PCB Design", "Sensors Integration", "MATLAB"],
     education: [
@@ -42,6 +48,9 @@ export const teamData = [
     institute: "K.S. Institute of Technology",
     email: "shreekishor@roaringthunders.dev",
     phone: "+91 9876543212",
+    linkedin: "https://linkedin.com/in/",
+    location: "Bengaluru",
+    photo: "",
     about: "Detail-oriented ECE student focused on digital signal processing and communication networks. Exploring the frontiers of 5G and wireless technologies.",
     skills: ["Digital Signal Processing", "Verilog/VHDL", "Network Protocols", "Python", "Wireless Communication", "MATLAB"],
     education: [
@@ -60,6 +69,9 @@ export const teamData = [
     institute: "K.S. Institute of Technology",
     email: "tarun@roaringthunders.dev",
     phone: "+91 9876543213",
+    linkedin: "https://linkedin.com/in/",
+    location: "Bengaluru",
+    photo: "",
     about: "Creative problem solver bridging electronics and software. Passionate about UI/UX for hardware interfaces and building accessible tech solutions.",
     skills: ["Web Technologies", "React", "Hardware Interfacing", "C/C++", "Microprocessors", "UI/UX Design"],
     education: [
@@ -78,6 +90,9 @@ export const teamData = [
     institute: "K.S. Institute of Technology",
     email: "akash@roaringthunders.dev",
     phone: "+91 9876543214",
+    linkedin: "https://linkedin.com/in/",
+    location: "Bengaluru",
+    photo: "",
     about: "Driven ECE student with a focus on VLSI design and nanoelectronics. Striving to optimize hardware performance and power efficiency.",
     skills: ["VLSI Design", "Cadence Tools", "Digital Electronics", "C++", "Semiconductor Physics", "Testing & Debugging"],
     education: [

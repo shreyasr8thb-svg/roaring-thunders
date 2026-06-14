@@ -22,8 +22,18 @@ const Team = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <div className="team-card">
-              <div className="member-avatar">
-                {member.name.charAt(0)}
+              <div className="member-avatar" style={{ overflow: 'hidden' }}>
+                {member.photo ? (
+                  <img 
+                    src={member.photo} 
+                    alt={member.name} 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex'; }}
+                  />
+                ) : null}
+                <div style={{ display: member.photo ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
+                  {member.name.charAt(0)}
+                </div>
               </div>
               <h2 className="member-name">{member.name}</h2>
               <div className="member-role">{member.role}</div>
