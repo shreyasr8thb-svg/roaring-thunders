@@ -2,7 +2,25 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link as RouterLink, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { teamData } from '../data/team';
-import { ArrowLeft, GraduationCap, Mail, Phone, Code, MapPin, Link } from 'lucide-react';
+import { ArrowLeft, GraduationCap, Mail, Phone, Code, MapPin } from 'lucide-react';
+
+const LinkedinIcon = ({ size = 24, color = "currentColor" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke={color}
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
 
 const Member = () => {
   const { id } = useParams();
@@ -61,7 +79,7 @@ const Member = () => {
             )}
             {member.linkedin && member.linkedin !== "https://linkedin.com/in/" && (
               <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="cv-contact-item" title="LinkedIn">
-                <Link size={20} />
+                <LinkedinIcon size={20} />
               </a>
             )}
             {member.location && (
