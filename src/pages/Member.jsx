@@ -76,18 +76,7 @@ const Member = () => {
         </div>
       </div>
 
-      <div className="cv-section">
-        <h2><Briefcase size={24} /> Key Projects</h2>
-        <div className="timeline">
-          {member.projects.map((proj, idx) => (
-            <div key={idx} className="timeline-item">
-              <div className="timeline-title">{proj.title}</div>
-              <div className="timeline-subtitle">{proj.period}</div>
-              <div className="timeline-desc">{proj.description}</div>
-            </div>
-          ))}
-        </div>
-      </div>
+
 
     </motion.div>
   );

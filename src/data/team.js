@@ -12,20 +12,8 @@ export const teamData = [
       {
         degree: "B.E. in Electronics and Communication Engineering",
         institution: "KSIT, Bangalore",
-        period: "2022 - 2026",
+        period: "2025 - 2028",
         description: "Focusing on core electronics, microcontrollers, and communication protocols. Active member of technical clubs."
-      }
-    ],
-    projects: [
-      {
-        title: "Smart Home Automation System",
-        period: "2024",
-        description: "Designed an IoT-based home automation system using ESP32 and MQTT protocol for real-time device control."
-      },
-      {
-        title: "Automated Weather Station",
-        period: "2023",
-        description: "Built a localized weather station with custom PCB design to monitor environmental metrics."
       }
     ]
   },
@@ -42,20 +30,8 @@ export const teamData = [
       {
         degree: "B.E. in Electronics and Communication Engineering",
         institution: "KSIT, Bangalore",
-        period: "2022 - 2026",
+        period: "2025 - 2028",
         description: "Specializing in control systems and robotic automation. Participating in national level hackathons."
-      }
-    ],
-    projects: [
-      {
-        title: "Line Following Robot",
-        period: "2023",
-        description: "Developed a precision line-following robot using PID controllers and infrared sensor arrays."
-      },
-      {
-        title: "Wireless Power Transfer Model",
-        period: "2024",
-        description: "Prototyped a short-range wireless power transfer system using magnetic resonant coupling."
       }
     ]
   },
@@ -72,20 +48,8 @@ export const teamData = [
       {
         degree: "B.E. in Electronics and Communication Engineering",
         institution: "KSIT, Bangalore",
-        period: "2022 - 2026",
+        period: "2025 - 2028",
         description: "Deep diving into telecommunication networks and digital electronics."
-      }
-    ],
-    projects: [
-      {
-        title: "Audio Signal Noise Reduction",
-        period: "2024",
-        description: "Implemented digital filters in MATLAB to significantly reduce background noise in audio transmissions."
-      },
-      {
-        title: "FPGA-based Traffic Controller",
-        period: "2023",
-        description: "Designed a simulated smart traffic light controller using Verilog and deployed on an FPGA board."
       }
     ]
   },
@@ -102,20 +66,8 @@ export const teamData = [
       {
         degree: "B.E. in Electronics and Communication Engineering",
         institution: "KSIT, Bangalore",
-        period: "2022 - 2026",
+        period: "2025 - 2028",
         description: "Combining core hardware knowledge with modern web technologies for holistic system design."
-      }
-    ],
-    projects: [
-      {
-        title: "IoT Dashboard Interface",
-        period: "2024",
-        description: "Built a responsive web dashboard using React to monitor and control remote sensor nodes."
-      },
-      {
-        title: "Smart Attendance System",
-        period: "2023",
-        description: "Developed an RFID-based attendance tracker with a local database integration."
       }
     ]
   },
@@ -132,20 +84,8 @@ export const teamData = [
       {
         degree: "B.E. in Electronics and Communication Engineering",
         institution: "KSIT, Bangalore",
-        period: "2022 - 2026",
+        period: "2025 - 2028",
         description: "Specializing in chip design principles and low-power electronics."
-      }
-    ],
-    projects: [
-      {
-        title: "Low Power ALU Design",
-        period: "2024",
-        description: "Designed and simulated a 16-bit Arithmetic Logic Unit optimizing for minimal power consumption."
-      },
-      {
-        title: "Digital Logic Analyzer",
-        period: "2023",
-        description: "Created a PC-based logic analyzer interface to test and verify digital circuit outputs."
       }
     ]
   }
