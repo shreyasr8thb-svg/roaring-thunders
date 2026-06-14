@@ -42,7 +42,7 @@ const Team = () => {
               </p>
               <Link to={`/team/${member.id}`} style={{ width: '100%' }}>
                 <button className="view-cv-btn" style={{ width: '100%' }}>
-                  View Full CV
+                  View About
                 </button>
               </Link>
             </div>
