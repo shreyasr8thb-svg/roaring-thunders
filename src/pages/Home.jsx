@@ -8,9 +8,9 @@ const Home = () => {
     <div className="home-container">
       <section className="hero">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ type: "spring", stiffness: 70, damping: 20 }}
         >
           <h1>
             We Are <span className="highlight">Roaring Thunders</span>

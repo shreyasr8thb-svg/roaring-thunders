@@ -17,9 +17,9 @@ const Team = () => {
         {teamData.map((member, index) => (
           <motion.div
             key={member.id}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ type: "spring", stiffness: 80, damping: 15, delay: index * 0.1 }}
           >
             <div className="team-card">
               <div className="member-avatar" style={{ overflow: 'hidden' }}>

@@ -23,9 +23,9 @@ const Member = () => {
   return (
     <motion.div 
       className="cv-container"
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0, scale: 0.95, y: 20 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ type: "spring", stiffness: 90, damping: 20 }}
     >
       <RouterLink to="/team" className="back-btn">
         <ArrowLeft size={20} /> Back to Team
