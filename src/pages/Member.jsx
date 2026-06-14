@@ -65,7 +65,10 @@ const Member = () => {
         </div>
         <div className="cv-title">
           <h1>{member.name}</h1>
-          <p>{member.role} | {member.institute}</p>
+          <p style={{ marginBottom: member.tag ? '0.75rem' : '1.2rem' }}>{member.role} | {member.institute}</p>
+          {member.tag && (
+            <div className="special-tag" style={{ marginBottom: '1.2rem', display: 'inline-block' }}>{member.tag}</div>
+          )}
           <div className="cv-contact">
             {member.email && (
               <a href={`mailto:${member.email}`} className="cv-contact-item" title="Email">

@@ -9,6 +9,7 @@ export const teamData = [
     linkedin: "https://linkedin.com/in/shreyas-r-kowshik-894ba3205",
     location: "Bengaluru",
     photo: "/shreyas.jpg", // Place the image in the 'public' folder named 'shreyas.jpg'
+    tag: "App & Web Developer",
     about: "Enthusiastic and motivated fresher with a strong foundation in VLSI and a keen interest in Semiconductor technologies. Seeking to begin my career in the VLSI and semiconductor industry with an innovative organisation.",
     skills: ["VLSI Design", "Semiconductor Technologies", "Embedded C", "Arduino/Raspberry Pi", "Python", "Circuit Design"],
     education: [

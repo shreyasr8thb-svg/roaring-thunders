@@ -37,9 +37,12 @@ const Team = () => {
               </div>
               <h2 className="member-name">{member.name}</h2>
               <div className="member-role">{member.role}</div>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: member.tag ? '0.75rem' : '1.5rem', fontSize: '0.9rem' }}>
                 {member.institute}
               </p>
+              {member.tag && (
+                <div className="special-tag">{member.tag}</div>
+              )}
               <Link to={`/team/${member.id}`} style={{ width: '100%' }}>
                 <button className="view-cv-btn" style={{ width: '100%' }}>
                   View About
