@@ -15,7 +15,7 @@ export const teamData = [
       {
         degree: "B.E. in Electronics and Communication Engineering",
         institution: "KSIT, Bangalore",
-        period: "2025 - 2028",
+        period: "2025 - 2029",
         description: "Focusing on core electronics, microcontrollers, and communication protocols. Active member of technical clubs."
       }
     ]
@@ -36,7 +36,7 @@ export const teamData = [
       {
         degree: "B.E. in Electronics and Communication Engineering",
         institution: "KSIT, Bangalore",
-        period: "2025 - 2028",
+        period: "2025 - 2029",
         description: "Specializing in control systems and robotic automation. Participating in national level hackathons."
       }
     ]
@@ -57,7 +57,7 @@ export const teamData = [
       {
         degree: "B.E. in Electronics and Communication Engineering",
         institution: "KSIT, Bangalore",
-        period: "2025 - 2028",
+        period: "2025 - 2029",
         description: "Deep diving into telecommunication networks and digital electronics."
       }
     ]
@@ -78,7 +78,7 @@ export const teamData = [
       {
         degree: "B.E. in Electronics and Communication Engineering",
         institution: "KSIT, Bangalore",
-        period: "2025 - 2028",
+        period: "2025 - 2029",
         description: "Combining core hardware knowledge with modern web technologies for holistic system design."
       }
     ]
@@ -99,7 +99,7 @@ export const teamData = [
       {
         degree: "B.E. in Electronics and Communication Engineering",
         institution: "KSIT, Bangalore",
-        period: "2025 - 2028",
+        period: "2025 - 2029",
         description: "Specializing in chip design principles and low-power electronics."
       }
     ]
