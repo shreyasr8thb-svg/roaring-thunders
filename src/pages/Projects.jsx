@@ -24,6 +24,14 @@ const Projects = () => {
             <h2 className="project-title">Tumkuru Connect: The Central Hub for Industrial Ecosystems</h2>
             <p className="project-subtitle">Comprehensive Cross-Platform Utility and Community Application</p>
           </div>
+          <a 
+            href="https://tumkur-autoconnect-web.vercel.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="visit-app-btn"
+          >
+            Visit the App <ArrowUpRight size={20} />
+          </a>
         </div>
 
         <div className="project-content">
