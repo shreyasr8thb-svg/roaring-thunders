@@ -5,7 +5,7 @@ export const teamData = [
     role: "Electronics & Communication Engineer",
     institute: "K.S. Institute of Technology",
     email: "shreyasr8thb@gmail.com",
-    phone: "9972938188",
+    phone: "+919972938188",
     linkedin: "https://linkedin.com/in/shreyas-r-kowshik-894ba3205",
     location: "Bengaluru",
     photo: "/shreyas.jpg", // Place the image in the 'public' folder named 'shreyas.jpg'
